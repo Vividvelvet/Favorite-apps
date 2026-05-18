@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to update README.md with the last updated date for each GitHub repository.
+Script to update README.md with the last updated date and star count for each GitHub repository.
 This script is run by GitHub Actions on a schedule.
 """
 
@@ -20,10 +20,10 @@ HEADERS = {
 # Matches: [**App Name**](https://github.com/owner/repo)
 GITHUB_LINK_PATTERN = r'\[(\*\*[^*]+\*\*)\]\((https://github\.com/([^/]+)/([^/)]+))\)'
 
-def get_last_updated(owner: str, repo: str) -> str:
+def get_repo_info(owner: str, repo: str) -> tuple:
     """
-    Fetch the last updated date for a GitHub repository.
-    Returns a formatted date string like "2026-05-18"
+    Fetch the last updated date and star count for a GitHub repository.
+    Returns a tuple of (date_string, star_count)
     """
     try:
         url = f'https://api.github.com/repos/{owner}/{repo}'
@@ -33,18 +33,28 @@ def get_last_updated(owner: str, repo: str) -> str:
         
         # Use pushed_at as the last update date
         pushed_at = data.get('pushed_at')
+        date_str = 'Unknown'
         if pushed_at:
-            # Parse and format the date (YYYY-MM-DD)
             date_obj = datetime.fromisoformat(pushed_at.replace('Z', '+00:00'))
-            return date_obj.strftime('%Y-%m-%d')
-        return 'Unknown'
+            date_str = date_obj.strftime('%Y-%m-%d')
+        
+        # Get star count
+        stars = data.get('stargazers_count', 0)
+        
+        return date_str, stars
     except Exception as e:
         print(f"Error fetching {owner}/{repo}: {e}")
-        return 'Unknown'
+        return 'Unknown', 0
+
+def format_stars(count: int) -> str:
+    """Format star count in a human-readable way."""
+    if count >= 1000:
+        return f"{count/1000:.1f}k".rstrip('0').rstrip('.')
+    return str(count)
 
 def update_readme():
     """
-    Update README.md with last updated dates for all GitHub repositories.
+    Update README.md with last updated dates and star counts for all GitHub repositories.
     """
     # Read current README
     with open('README.md', 'r', encoding='utf-8') as f:
@@ -52,20 +62,21 @@ def update_readme():
     
     original_content = content
     
-    # Find all GitHub links and replace them with dated versions
+    # Find all GitHub links and replace them with dated/starred versions
     def replace_link(match):
         app_name = match.group(1)  # e.g., **Track and Graph**
         full_url = match.group(2)  # e.g., https://github.com/SamAmco/track-and-graph
         owner = match.group(3)     # e.g., SamAmco
         repo = match.group(4)      # e.g., track-and-graph
         
-        # Get last updated date
-        last_updated = get_last_updated(owner, repo)
+        # Get repository info
+        last_updated, stars = get_repo_info(owner, repo)
         
-        # Return link with date appended
-        return f'[{app_name}]({full_url}) – Updated: {last_updated}'
+        # Return link with date and stars
+        stars_str = format_stars(stars)
+        return f'[{app_name}]({full_url}) – ⭐ {stars_str} • Updated: {last_updated}'
     
-    # Replace all GitHub links with dated versions
+    # Replace all GitHub links with dated/starred versions
     updated_content = re.sub(GITHUB_LINK_PATTERN, replace_link, content)
     
     # Write back if there were changes
