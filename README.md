@@ -1,3 +1,6 @@
+[![Stars](https://img.shields.io/github/stars/Vividvelvet/favorite-apps?style=flat-square)](https://github.com/Vividvelvet/favorite-apps)
+[![Last Updated](https://img.shields.io/badge/last%20updated-2026--05-blue?style=flat-square)](https://github.com/Vividvelvet/favorite-apps)
+
 # Useful Apps
 
 A collection of my favorite Android apps and tools organized by category.
