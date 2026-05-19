@@ -76,3 +76,16 @@ A collection of my favorite Android apps and tools organized by category.
 - [**Helio**](https://github.com/helio-fm/helio-sequencer) – ⭐ 3.5k • Updated: 2026-05-15 – Musical sequencer/piano roll on phone
 - [**Chronal**](https://github.com/cognitivitydev/Chronal) – ⭐ 87 • Updated: 2026-05-14 – Metronome and tuner with extra features
 - [**ChordReader 2**](https://github.com/AndInTheClouds/chordreader2) – ⭐ 52 • Updated: 2025-08-13 – Find and store chords for songs
+
+# Windows Software
+
+## Ableton Alternatives
+
+- [**ComposeYogi**](https://github.com/AppsYogi-com/ComposeYogi)
+- [**BespokeSynth**](https://github.com/BespokeSynth/BespokeSynth/)
+- [**Qtractor**](https://qtractor.org/)
+- [**FamiStudio**](https://github.com/BleuBleu/FamiStudio)
+- [**Yadaw**](https://github.com/mlm-games/yadaw)
+- [**Stargate**](https://github.com/stargatedaw/stargate)
+- [**Ardour**](https://github.com/Ardour/ardour)
+- [**LMMS**](https://github.com/LMMS/lmms)
