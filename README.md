@@ -78,7 +78,7 @@ A collection of my favorite Android apps and tools organized by category.
 - [**ChordReader 2**](https://github.com/AndInTheClouds/chordreader2) – ⭐ 52 • Updated: 2025-08-13 – Find and store chords for songs
 
 ## Launchers
-- [8*Kvaesitso**](https://github.com/MM2-0/Kvaesitso)
+- [**Kvaesitso**](https://github.com/MM2-0/Kvaesitso)
 - [****]()
 - [****]()
 - [****]()
