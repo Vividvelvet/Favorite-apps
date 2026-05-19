@@ -77,6 +77,19 @@ A collection of my favorite Android apps and tools organized by category.
 - [**Chronal**](https://github.com/cognitivitydev/Chronal) – ⭐ 87 • Updated: 2026-05-14 – Metronome and tuner with extra features
 - [**ChordReader 2**](https://github.com/AndInTheClouds/chordreader2) – ⭐ 52 • Updated: 2025-08-13 – Find and store chords for songs
 
+## Launchers
+- [*Kvaesitso**](https://github.com/MM2-0/Kvaesitso)
+- [***]()
+- [***]()
+- [***]()
+- [***]()
+- [***]()
+- [***]()
+- [***]()
+- [***]()
+- 
+
+
 # Windows Software
 
 ## Ableton Alternatives
