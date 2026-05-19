@@ -96,3 +96,9 @@ A collection of my favorite Android apps and tools organized by category.
 - https://github.com/jksalcedo/librefind
 - https://github.com/pluja/awesome-privacy
 - https://github.com/offa/android-foss
+
+Template to add new entries
+- On Github
+    - [**Cool App**](https://github.com/username/cool-app) ![Stars](https://img.shields.io/github/stars/username/cool-app?style=flat-square&color=brightgreen) ![Last Updated](https://img.shields.io/badge/updated-2026--05-brightgreen?style=flat-square) – Does something cool
+- Not on Github
+    - [**App Name**](link) – Description
