@@ -89,3 +89,8 @@ A collection of my favorite Android apps and tools organized by category.
 - [**Stargate**](https://github.com/stargatedaw/stargate)
 - [**Ardour**](https://github.com/Ardour/ardour)
 - [**LMMS**](https://github.com/LMMS/lmms)
+
+#Some Good Lists
+- https://github.com/jksalcedo/librefind
+- https://github.com/pluja/awesome-privacy
+- https://github.com/offa/android-foss
