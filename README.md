@@ -4,7 +4,7 @@ A collection of my favorite Android apps and tools organized by category.
 
 ## 📊 Tracking and Digital Health
 
-- ![Stars](https://img.shields.io/github/stars/SamAmco/track-and-graph?style=flat-square&color=red) [**Track and Graph**](https://github.com/SamAmco/track-and-graph) – Simple, powerful data tracking and visualization
+- !(https://img.shields.io/github/stars/SamAmco/track-and-graph?style=flat-square&color=red) [**Track and Graph**](https://github.com/SamAmco/track-and-graph) – Simple, powerful data tracking and visualization
 - ![Stars](https://img.shields.io/github/stars/ActivityWatch/activitywatch?style=flat-square&color=brightgreen) [**Activity Watch**](https://github.com/ActivityWatch/activitywatch) – Time tracking application
 - ![Stars](https://img.shields.io/github/stars/markusfisch/ScreenTime?style=flat-square&color=red) [**ScreenTime**](https://github.com/markusfisch/ScreenTime) – App usage tracker
 - ![Stars](https://img.shields.io/github/stars/jdm-contrib/jdm?style=flat-square&color=orange) [**JDM**](https://github.com/jdm-contrib/jdm) – Personal finance manager
